@@ -1,0 +1,198 @@
+*,
+*::after,
+*::before {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+button,
+input::placeholder {
+    font-family: inherit;
+    color: inherit;
+}
+
+:root {
+
+    /* font-family */
+    --heading-font-family: 'Alegreya', serif;
+    --text-font-family: 'Montserrat Alternates', sans-serif;
+    --tags-font-family: 'Raleway', sans-serif;
+
+    /* font and other sizing */
+
+    --xl: 3rem;
+    --l: 1.7rem;
+    --m: 1.3rem;
+    --s: 1rem;
+    --xs: .5rem;
+
+    /* colors */
+
+    --rose-red: hsla(338, 95%, 41%, 1);
+    --dark-purple: rgba(59, 28, 50, 0.973);
+    --dark-purple-opaque: rgba(83, 40, 71, 0.619);
+    --celadon: hsla(140, 36%, 74%, 1);
+    --sunset: hsla(31, 100%, 81%, 1);
+    --brown-sugar: hsla(22, 49%, 49%, 1);
+
+
+    /* borders */
+    --border-s: 1px solid var(--dark-purple);
+    --border-m: 3px solid var(--dark-purple-opaque);
+    /* border-radius */
+
+    --radius-xs: 1.5px;
+    --radius-m: 5px;
+    --radius-l: 15px;
+    --transition: all 150ms ease-in-out;
+
+    /* box-shadows */
+    --box-inner: inset 0px 0px 10px 1px rgba(19, 22, 22, 0.728);
+    --box-regular: inset 0px 0px 8px 1px rgba(19, 22, 22, 0.728);
+    --box-double: inset 0px 0px 30px 5px var(--rose-red),
+        0px 0px 20px 5px var(--celadon);
+    --box-double2: inset 0px 0px 30px 5px var(--rose-red),
+        0px 0px 20px 5px var(--dark-purple);
+
+
+}
+
+
+
+
+.header {
+    /* background-color: var(--dark-purple); */
+    /* box-shadow: var(--box-regular), var(--box-inner); */
+    border-bottom: var(--border-m);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--xl);
+
+}
+
+.header-left {
+    flex: 1;
+
+    padding-left: 5rem;
+}
+
+
+.header-right {
+    flex: 1;
+}
+
+.icons {
+
+
+    display: flex;
+    gap: var(--m);
+    justify-content: end;
+    padding-right: var(--xl);
+    max-width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.logo {
+    position: relative;
+}
+
+.blog-name-right {
+    position: absolute;
+    top: 28px;
+    left: 4px;
+    writing-mode: vertical-lr;
+    font-family: var(--text-font-family);
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: flex;
+    color: var(--dark-purple-opaque);
+    font-size: 1.16em;
+    margin-bottom: var(--xs);
+
+    /* text-shadow: 0px 0px 6px var(--dark-purple),
+        0px 0px 4px var(--dark-purple); */
+    transition: 1s ease-in-out;
+    pointer-events: none;
+}
+
+.blog-name-left {
+
+
+    position: absolute;
+    top: 28px;
+    left: 178px;
+    writing-mode: vertical-lr;
+    font-family: var(--text-font-family);
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: flex;
+    color: var(--dark-purple-opaque);
+    font-size: 1.16em;
+    margin-bottom: var(--xs);
+
+    /* text-shadow: 0px 0px 6px var(--dark-purple),
+        0px 0px 4px var(--dark-purple); */
+    transition: 1s ease-in-out;
+    pointer-events: none;
+
+}
+
+
+
+.header:hover {
+
+    /*  .blog-name-left,
+    .blog-name-right, */
+    .photo {
+        transform: rotateY(180deg);
+    }
+
+}
+
+
+
+.photo {
+
+    opacity: 0.9;
+    margin: var(--m);
+    border-radius: 50%;
+    /* background-color: var(--dark-purple); */
+    /* box-shadow: var(--box-double2); */
+    max-width: 10rem;
+    transition: 1s ease-in-out;
+}
+
+.heading-container {
+    border-bottom: 2px solid rgb(65, 5, 25);
+    /* box-shadow: inset 0px 0px 10px 1px rgba(19, 22, 22, 0.728); */
+    margin-top: var(--xs);
+    /* background-color: var(--dark-purple-opaque); 
+    color: whitesmoke;*/
+    /* margin-bottom: var(--xl); */
+    /* background-color: rgba(120, 181, 227, 0.541); */
+
+}
+
+.latest-posts {
+    /* box-shadow: var(--box-regular); */
+    /* background-color: var(--dark-purple); */
+    /* color: whitesmoke; */
+    color: var(--dark-purple);
+    font-size: large;
+    font-weight: 600;
+    margin-top: var(--xs);
+    padding: var(--xs);
+    border-top: 3px solid var(--dark-purple-opaque);
+}
+
+h1 {
+    color: var(--dark-purple);
+    font-weight: 300;
+    text-align: center;
+    padding: var(--xs);
+}

@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+button,
+input::placeholder {
+    font-family: inherit;
+    color: inherit;
+}
+
+:root {
+
+    /* font-family */
+    --heading-font-family: 'Alegreya', serif;
+    --text-font-family: 'Montserrat Alternates', sans-serif;
+    --tags-font-family: 'Raleway', sans-serif;
+
+    /* font and other sizing */
+
+    --xl: 3rem;
+    --l: 1.7rem;
+    --m: 1.3rem;
+    --s: 1rem;
+    --xs: .5rem;
+
+    /* colors */
+
+    --rose-red: hsla(338, 95%, 41%, 1);
+    --dark-purple: rgba(59, 28, 50, 0.973);
+    --dark-purple-opaque: rgba(83, 40, 71, 0.619);
+    --celadon: hsla(140, 36%, 74%, 1);
+    --sunset: hsla(31, 100%, 81%, 1);
+    --brown-sugar: hsla(22, 49%, 49%, 1);
+
+
+    /* borders */
+    --border-s: 1px solid var(--dark-purple);
+    --border-m: 3px solid var(--dark-purple-opaque);
+    /* border-radius */
+
+    --radius-xs: 1.5px;
+    --radius-m: 5px;
+    --radius-l: 15px;
+    --transition: all 150ms ease-in-out;
+
+    /* box-shadows */
+    --box-inner: inset 0px 0px 10px 1px rgba(19, 22, 22, 0.728);
+    --box-regular: inset 0px 0px 8px 1px rgba(19, 22, 22, 0.728);
+    --box-opaque: 1px 1px 9px var(--celadon),
+        3px 3px 8px 9px var(--sunset);
+    --box-double: inset 0px 0px 30px 5px var(--rose-red),
+        0px 0px 20px 5px var(--celadon);
+    --box-double2: inset 0px 0px 30px 5px var(--rose-red),
+        0px 0px 20px 5px var(--dark-purple);
+
+
+}
+
+.main-container {
+    border: 4px solid red;
+}
+
+.posts-container {
+    border: 3px solid rgb(0, 221, 255);
+}
+
+.first-post-container {
+    border: 2px solid rgb(255, 247, 0);
+}
+
+.title {
+    border: 1px solid rgb(0, 34, 255);
+}
+
+.info-container {
+    border: 2px solid rgb(13, 255, 0);
+}
+
+.name {
+    border: 1px solid rgb(0, 34, 255);
+}
+
+.date {
+    border: 1px solid rgb(0, 34, 255);
+}
+
+.content-container {
+    border: 2px solid rgb(13, 255, 0);
+}
+
+.image-container {
+    border: 2px solid rgb(0, 34, 255);
+}
+
+.text-container {
+    border: 2px solid rgb(0, 34, 255);
+}
