@@ -60,6 +60,11 @@ input::placeholder {
         0px 0px 20px 5px var(--dark-purple);
 
 
+
+}
+
+body {
+    max-width: 100rem;
 }
 
 .main-container {
@@ -67,11 +72,17 @@ input::placeholder {
     border: 4px solid red;
 }
 
+.sidebar-container {
+    border: 2px solid black;
+}
+
 .posts-container {
+
     border: 3px solid rgb(0, 221, 255);
 }
 
 .first-post-container {
+    display: grid;
     border: 2px solid rgb(255, 247, 0);
 }
 
@@ -80,18 +91,23 @@ input::placeholder {
 }
 
 .info-container {
+
     border: 2px solid rgb(13, 255, 0);
 }
 
 .name {
+
     border: 1px solid rgb(0, 34, 255);
 }
 
 .date {
+
     border: 1px solid rgb(0, 34, 255);
 }
 
 .content-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
     border: 2px solid rgb(13, 255, 0);
 }
 
@@ -101,4 +117,12 @@ input::placeholder {
 
 .text-container {
     border: 2px solid rgb(0, 34, 255);
+}
+
+.diamond {
+    font-size: 12px;
+}
+
+#diamond {
+    margin-right: var(--m);
 }
