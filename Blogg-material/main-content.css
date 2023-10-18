@@ -206,6 +206,7 @@ body {
 }
 
 .title {
+    background-color: white;
     max-width: fit-content;
     border: var(--border-s);
     box-shadow: var(--box-title);
