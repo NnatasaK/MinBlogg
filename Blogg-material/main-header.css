@@ -46,21 +46,23 @@
 }
  */
 .header-middle {
-    height: 16rem;
-    border-radius: 0.2rem;
-    /*  border-left: var(--border-ss);
+    flex: 1.2;
+    /* height: 16rem; */
+
+    /* border: 1px solid black; */
+    border-left: var(--border-ss);
     border-right: var(--border-ss);
-    border-bottom: var(--border-ss); */
+    /* border-bottom: var(--border-ss); */
 }
 
 .header-left {
-
+    flex: 1;
     padding-top: var(--s);
     /* border-top: var(--border-ss); */
 }
 
 .header-right {
-
+    flex: 1;
     padding-bottom: var(--xs);
     padding-top: 1.6rem;
     /* border-top: var(--border-ss); */
@@ -71,7 +73,7 @@
 .header-right {
 
     /* margin: var(--m); */
-    flex: 1;
+
     background-color: rgb(255, 255, 255);
     /* box-shadow: inset 0 0 0 3px rgb(189, 206, 255); */
     /* border: var(--border-m); */
@@ -102,7 +104,7 @@
 }
 
 .icons>img {
-    width: 65px;
+    width: 70px;
 }
 
 .icons {
@@ -168,21 +170,22 @@
     /* border-radius: 30%; */
     /* background-color: var(--dark-purple); */
     /* box-shadow: var(--box-double2); */
-    rotate: -10deg;
-    max-width: 15rem;
-    animation-duration: 2.5s;
+    /* rotate: -10deg; */
+    max-width: 18rem;
+    /*  animation-duration: 2.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.01, 0, 0, 0.01);
+    animation-timing-function: cubic-bezier(0.01, 0, 0, 0.01); */
 
 }
 
-.photo {
+
+/*.photo {
     animation-name: shake;
 }
 
 @keyframes shake {
 
-    /*   from {
+      from {
         transform: translateX(0px)translateY(0px);
     }
 
@@ -192,29 +195,26 @@
 
     to {
         transform: translateX(0px) translateY(0px);
-    } */
-    0% {
-        transform: translateX(0px)translateY(0px);
-    }
-
-    5%,
-    25% {
-        transform: translateX(20px) translateY(20px)
-    }
-
-    15%,
-    35% {
-        transform: translateX(0px) translateY(0px);
-    }
-
-    40% {
-        transform: none;
-    }
-
+    } 
+0% {
+    transform: translateX(0px)translateY(0px);
 }
 
+5%,
+25% {
+    transform: translateX(20px) translateY(20px)
+}
 
+15%,
+35% {
+    transform: translateX(0px) translateY(0px);
+}
 
+40% {
+    transform: none;
+}
+
+}*/
 
 .empty {
     flex: 1;

@@ -77,7 +77,7 @@ input::placeholder {
     font-size: var(--s);
     box-shadow: var(--box-title);
     border-radius: var(--radius-xs);
-    background-color: rgb(189, 206, 255);
+    /* background-color: rgb(189, 206, 255); */
     border: var(--border-ss);
 
 }
