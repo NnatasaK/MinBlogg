@@ -11,6 +11,12 @@
 } */
 
 .header {
+    /*  background-image: url(customized/cutout-5.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 60%;
+    background-blend-mode: overlay;
+ */
     /* 
     background-image: url(customized/cutout-3.jpg);
     background-repeat: no-repeat;
@@ -27,9 +33,10 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: end;
-    gap: var(--xl);
-    background-color: white;
+    /* gap: var(--xl); */
+    background-color: rgba(246, 247, 248, 0.578);
     border: var(--border-ss);
+
 
 }
 
@@ -39,6 +46,8 @@
 }
  */
 .header-middle {
+    height: 16rem;
+
     border-left: var(--border-ss);
     border-right: var(--border-ss);
 }
@@ -49,6 +58,7 @@
 }
 
 .header-right {
+
     padding-bottom: var(--xs);
     padding-top: 1.6rem;
     border-top: var(--border-ss);
@@ -58,9 +68,9 @@
 .header-middle,
 .header-right {
 
-    margin: var(--m);
+    /* margin: var(--m); */
     flex: 1;
-
+    background-color: white;
 
     /* border: var(--border-m); */
     /* padding-left: 5rem; */

@@ -62,19 +62,26 @@ input::placeholder {
 }
 
 .sidebar-container {
-
+    display: flex;
+    flex-direction: column;
+    background-image: url(customized/tentacle-flipped-bottom.png);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 180%;
+    background-position: bottom;
+    /* background-size: cover; */
+    background-blend-mode: overlay;
     font-family: var(--tags-font-family);
     color: black;
     font-weight: 400;
     font-size: var(--s);
     box-shadow: var(--box-title);
     border-radius: var(--radius-xs);
+    background-color: rgb(109, 164, 209);
 
 }
 
-#sidebar-background
-
-/* .posts-container */
+/* #sidebar-background
     {
     background-image: url(customized/cutout-2.jpg) !important;
     background-repeat: no-repeat;
@@ -82,7 +89,7 @@ input::placeholder {
     background-blend-mode: hard-light;
     background-color: rgb(109, 164, 209);
 }
-
+ */
 
 .articles-container,
 .tags-container {
@@ -132,6 +139,7 @@ input::placeholder {
 }
 
 .sidebar-container>h1 {
+    text-align: center;
     background-color: rgb(255, 255, 255);
     border: var(--border-ss);
     padding-bottom: -1px;
@@ -143,17 +151,15 @@ input::placeholder {
 .search-form {
     display: flex;
     flex-direction: row;
-    max-width: 15rem;
-    height: 5rem;
-
 }
 
 #search-input {
-
+    flex: auto;
+    /* width: clamp(10rem, 15rem, 15rem); */
     border: var(--border-ss);
     padding: var(--xs);
     border-radius: var(--radius-xxs);
-    max-width: 15rem;
+
 }
 
 .search-button {
