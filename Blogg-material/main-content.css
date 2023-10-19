@@ -75,7 +75,6 @@ input::placeholder {
 body {
     max-width: 100rem;
     margin: var(--l);
-    border: var(--border-m);
     border-radius: var(--radius-xs);
     background-image: url(customized/skull-and-tentacle-flipped.png);
     background-repeat: no-repeat;
