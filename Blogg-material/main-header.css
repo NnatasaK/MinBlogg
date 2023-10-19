@@ -33,9 +33,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: end;
+
     /* gap: var(--xl); */
     /*  background-color: rgba(235, 235, 235, 0.443); */
-    /* border: var(--border-ss); */
+    border: var(--border-ss);
+    /*  position: fixed;
+    top: 0;
+    width: 100%; */
 
 
 }
@@ -248,7 +252,7 @@
     /* background-color: rgba(7, 50, 95, 0.84); */
 
     /* box-shadow: inset 0px 0px 10px 1px rgba(19, 22, 22, 0.728); */
-    margin-top: var(--xl);
+    margin-top: var(--l);
 
     /* background-color: var(--dark-purple-opaque); 
     color: whitesmoke;*/

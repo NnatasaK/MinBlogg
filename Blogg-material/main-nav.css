@@ -81,6 +81,7 @@ input::placeholder {
     background-color: rgba(255, 255, 255, 0.801);
     border: var(--border-ss);
     padding: var(--xl);
+    margin-bottom: 2.5rem;
 
 
 }
@@ -175,6 +176,7 @@ input::placeholder {
     color: white;
     font-family: var(--tags-font-family);
     font-weight: 500;
+    font-size: larger;
     margin-left: -1px;
 
 
