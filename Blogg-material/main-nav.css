@@ -78,7 +78,10 @@ input::placeholder {
     box-shadow: var(--box-title);
     border-radius: var(--radius-xs);
     /* background-color: rgb(189, 206, 255); */
+    background-color: rgba(255, 255, 255, 0.801);
     border: var(--border-ss);
+    padding: var(--xl);
+
 
 }
 

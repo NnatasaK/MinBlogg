@@ -74,38 +74,43 @@ input::placeholder {
 
 body {
     max-width: 100rem;
+    margin: var(--l);
     border: var(--border-m);
+    border-radius: var(--radius-xs);
     background-image: url(customized/skull-and-tentacle-flipped.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 30%;
-    background-position: center 20% right;
+    /* background-attachment: fixed; */
+    background-size: 33rem;
+    background-position: 0rem -1.1rem;
+    /* background-position: center 20% right; */
     /* background-size: cover; */
     background-blend-mode: overlay;
     background-color: rgba(255, 255, 255, 0.422);
+    /*  background-color: rgba(235, 235, 235, 0.443); */
 
 }
 
 
 .latest-posts {
     font-family: var(--tags-font-family);
-    font-size: var(--m);
-    box-shadow: var(--box-regular);
+    font-size: var(--l);
+    /* box-shadow: var(--box-regular); */
 
 }
 
 .main-container {
     /* background-color: rgb(255, 255, 255); */
+    background-color: rgba(235, 235, 235, 0.443);
     background-image: url(customized/skull-and-tentacle-2.png);
     background-repeat: no-repeat;
-    background-position: right 30%;
-    background-size: 40%;
+    background-position: 65rem 5rem;
+    background-size: 65rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     gap: var(--xl);
-    margin-top: var(--m);
-    /* padding: var(--xl); */
+    /* margin-top: var(--m); */
+    padding: var(--xl);
     /* border: var(--border-m); */
 
 }
@@ -193,7 +198,7 @@ body {
 }
 
 .text-container {
-    background-color: rgba(244, 242, 240, 0.879);
+
     font-family: var(--tags-font-family);
     letter-spacing: var(--xxs);
     padding: var(--l);
