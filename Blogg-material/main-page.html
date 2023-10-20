@@ -89,14 +89,62 @@
         </div>
 
     </section>
-    <div class="latest-posts">
-        Latest posts:
-    </div>
-
 
     <!--main container-->
 
     <main class="main-container">
+        <!--sidebar and tags-->
+        <div class="sidebar">
+
+            <button id="toggle-sidebar" class="toggle-sidebar">
+                <img src="search-removebg-preview.png" alt="" class="toggle-icon">
+            </button>
+
+
+            <nav class="sidebar-container sidebar-background" id="hidden">
+                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">X</a>
+                <div class="search-bar">
+                    <form action="" id="search-form">
+                        <input type="text" id="search-input" placeholder="">
+                        <button class="search-button">Search</button>
+                    </form>
+                </div>
+
+
+
+                <div class="articles-container">
+                    <h1 id="nav-headings">Post archives</h1>
+                    <ul>
+                        <li>
+                            <a id="archive-tags" href="blog-post-1.html">November 2023</a>
+                        </li>
+                        <li>
+                            <a id="archive-tags" href="blog-post-1.html">Avgust 2023</a>
+                        </li>
+                        <li>
+                            <a id="archive-tags" href="blog-post-1.html">March 2023</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tags-container">
+                    <h1 id="nav-headings">Tags</h1>
+                    <div class="tag-container">
+                        <a id="tag" href="#sn-icons">cocktails</a>
+                        <a id="tag" href="">recipes</a>
+                        <a id="tag" href="">mixology</a>
+                        <a id="tag" href="">history</a>
+                        <a id="tag" href="">tips & tricks</a>
+                        <a id="tag" href="">inspiration</a>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+        <div class="latest-posts">
+            Latest posts:
+        </div>
+
 
         <div class="posts-container">
 
@@ -144,135 +192,8 @@
                     </div>
                 </div>
             </div>
-            <div class="first-post-container">
-
-
-                <div class="content-container">
-
-                    <div class="image-container">
-                        <p class="info-container">
-                            By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/01/2013
-                        </p>
-                        <img id="smaller-img" src="customized/6.jpg" alt="">
-                    </div>
-                    <div class="text-container">
-                        <p class="title">
-                            DO`S & DONT`S
-                        </p>
-                        <p class="text-main" id="text-long">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
-                            repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
-                            tempore vitae quae architecto omnis..text-container Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Debitis quam voluptas in quae aspernatur. Reiciendis eum consequuntur
-                            tempore repellat dolor nostrum, quod error, laudantium dolore sunt ipsa? Omnis, ad et? Lorem
-                            ipsum dolor sit amet consectetur, adipisicing elit. Est, vel neque! Facere facilis nihil ex
-                            atque velit quam, nisi, totam nam temporibus architecto itaque, repudiandae est officiis
-                            natus corrupti. Aperiam?
-                        </p>
-                        <button class="read-more">Read full article</button>
-                    </div>
-
-                </div>
-            </div>
-            <div class="first-post-container">
-
-
-                <div class="content-container">
-
-                    <div class="image-container">
-                        <p class="info-container">
-                            By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/01/2013
-                        </p>
-                        <img id="smaller-img" src="customized/6.jpg" alt="">
-                    </div>
-                    <div class="text-container">
-                        <p class="title">
-                            DO`S & DONT`S
-                        </p>
-                        <p class="text-main" id="text-long">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
-                            repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
-                            tempore vitae quae architecto omnis..text-container Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Debitis quam voluptas in quae aspernatur. Reiciendis eum consequuntur
-                            tempore repellat dolor nostrum, quod error, laudantium dolore sunt ipsa? Omnis, ad et? Lorem
-                            ipsum dolor sit amet consectetur, adipisicing elit. Est, vel neque! Facere facilis nihil ex
-                            atque velit quam, nisi, totam nam temporibus architecto itaque, repudiandae est officiis
-                            natus corrupti. Aperiam?
-                        </p>
-                        <button class="read-more">Read full article</button>
-                    </div>
-
-                </div>
-            </div>
-            <div class="first-post-container">
-
-
-                <div class="content-container">
-
-                    <div class="image-container">
-                        <p class="info-container">
-                            By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/01/2013
-                        </p>
-                        <img id="smaller-img" src="customized/6.jpg" alt="">
-                    </div>
-                    <div class="text-container">
-                        <p class="title">
-                            DO`S & DONT`S
-                        </p>
-                        <p class="text-main" id="text-long">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
-                            repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
-                            tempore vitae quae architecto omnis..text-container Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Debitis quam voluptas in quae aspernatur. Reiciendis eum consequuntur
-                            tempore repellat dolor nostrum, quod error, laudantium dolore sunt ipsa? Omnis, ad et? Lorem
-                            ipsum dolor sit amet consectetur, adipisicing elit. Est, vel neque! Facere facilis nihil ex
-                            atque velit quam, nisi, totam nam temporibus architecto itaque, repudiandae est officiis
-                            natus corrupti. Aperiam?
-                        </p>
-                        <button class="read-more">Read full article</button>
-                    </div>
-
-                </div>
-            </div>
-
 
         </div>
-        <!--nav bar and tags-->
-        <nav class="sidebar-container" id="sidebar-background">
-            <div class="search-bar">
-                <form action="" class="search-form">
-                    <input type="text" id="search-input" placeholder="">
-                    <button class="search-button">Search</button>
-                </form>
-            </div>
-
-
-            <h1>Post archives</h1>
-            <div class="articles-container">
-
-                <ul>
-                    <li>
-                        <a id="archive-tags" href="blog-post-1.html">November 2023</a>
-                    </li>
-                    <li>
-                        <a id="archive-tags" href="blog-post-1.html">Avgust 2023</a>
-                    </li>
-                    <li>
-                        <a id="archive-tags" href="blog-post-1.html">March 2023</a>
-                    </li>
-                </ul>
-            </div>
-            <h1>Tags</h1>
-            <div class="tags-container">
-                <a id="tag" href="#sn-icons">cocktails</a>
-                <a id="tag" href="">recipes</a>
-                <a id="tag" href="">mixology</a>
-                <a id="tag" href="">history</a>
-                <a id="tag" href="">tips & tricks</a>
-                <a id="tag" href="">inspiration</a>
-            </div>
-        </nav>
-
     </main>
     <footer class="footer-main">
         <div class="footer-content">
@@ -281,6 +202,7 @@
         </div>
 
     </footer>
+    <script src="main-page.js"></script>
 </body>
 
 
