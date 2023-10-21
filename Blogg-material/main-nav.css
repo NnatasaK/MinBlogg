@@ -75,12 +75,10 @@ input::placeholder {
 
 .toggle-sidebar {
 
-    background-color: rgb(255, 255, 255);
+    background: none;
     padding: var(--xs);
-    box-shadow: inset 0px 0px 1px 1px rgb(223, 219, 219);
     border-radius: var(--radius-m);
     margin: var(--xs);
-
 
 }
 
@@ -88,10 +86,29 @@ input::placeholder {
     width: 2rem;
     cursor: pointer;
 
+
 }
 
-.sidebar {}
 
+.X {
+    font-size: larger;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.X:hover,
+.toggle-icon:hover {
+    color: rgb(149, 149, 149);
+    opacity: 0.5;
+}
+
+
+
+
+.close-btn {
+    align-self: flex-end;
+
+}
 
 .sidebar-container>* {
     text-decoration: none;
@@ -115,6 +132,11 @@ input::placeholder {
     padding: var(--xl);
     margin: var(--l) 0;
 
+
+}
+
+#hidden {
+    transition: display 2s;
 }
 
 .sidebar-background {
@@ -223,7 +245,26 @@ input::placeholder {
 
 }
 
-/* .sidebar {
-    display: flex;
-    justify-content: flex-end;
-} */
+#myBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 8rem;
+    right: 5rem;
+    cursor: pointer;
+    --box-info: 0.1px -0.1px 2px 1px rgba(37, 36, 36, 0.486);
+    background-color: rgba(239, 237, 237, 0.566);
+    box-shadow: var(--box-info);
+    padding: var(--xs) var(--s);
+    border-radius: var(--radius-xs);
+    transition: var(--transition);
+}
+
+#myBtn:hover {
+    background-color: rgba(167, 166, 166, 0.279);
+
+}
+
+.top-arrow {
+    font-size: 3rem;
+    color: rgb(107, 106, 106);
+}

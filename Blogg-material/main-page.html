@@ -96,13 +96,13 @@
         <!--sidebar and tags-->
         <div class="sidebar">
 
-            <button id="toggle-sidebar" class="toggle-sidebar">
+            <button id="toggle-sidebar" class="toggle-sidebar" onclick="openNav()">
                 <img src="search-removebg-preview.png" alt="" class="toggle-icon">
             </button>
 
 
             <nav class="sidebar-container sidebar-background" id="hidden">
-                <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">X</a>
+                <a href="javascript:void(0)" class="close-btn X" onclick="closeNav()">X</a>
                 <div class="search-bar">
                     <form action="" id="search-form">
                         <input type="text" id="search-input" placeholder="">
@@ -195,6 +195,9 @@
 
         </div>
     </main>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <span class="top-arrow">&#8593;</span>
+    </button>
     <footer class="footer-main">
         <div class="footer-content">
             <img class="footer-photo" src="second-removebg-preview.png" alt="">
