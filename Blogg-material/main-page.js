@@ -1,4 +1,4 @@
-function openNav() {
+/* function openNav() {
     document.getElementById("hidden").style.display = "flex";
     document.getElementById("toggle-sidebar").style.visibility = "hidden";
 }
@@ -8,7 +8,7 @@ function closeNav() {
     document.getElementById("toggle-sidebar").style.visibility = "visible";
 }
 
-
+ */
 // Get the button
 let myButton = document.getElementById("myBtn");
 
