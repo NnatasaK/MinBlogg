@@ -61,49 +61,110 @@ input::placeholder {
 
 }
 
-@media screen and (max-width: 768px) {
 
-    /*    #toggle-sidebar,
-    .toggle-icon {
-        visibility: visible;
-    }
 
-    #hidden {
-        display: none;
-    } */
+.main-container {
+    position: relative;
 }
 
-.toggle-sidebar {
-
-    background: none;
-    padding: var(--xs);
+.sidebar-top {
+    --box-subtle: 1px 1px 3px 0px rgba(90, 90, 90, 0.753);
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 3.6rem;
+    overflow: hidden;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.368);
     border-radius: var(--radius-m);
-    margin: var(--xs);
+    box-shadow: var(--box-subtle);
+    /*  border: 0.5px solid white; */
 
+
+}
+
+input[type="checkbox"]:checked~.sidebar {
+    display: contents;
+    /* opacity: 1; */
+
+
+}
+
+input[type="checkbox"] {
+    transition: all 0.8s;
+    display: none;
 }
 
 .toggle-icon {
-    width: 2rem;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    transition: all 0.8s;
     cursor: pointer;
-
+    height: 100%;
+    width: 100%;
+    /* top: 35.7rem; */
+    height: 20px;
+    width: 20px;
+    z-index: 99;
 
 }
 
-
-.X {
-    font-size: larger;
-    font-weight: 600;
-    transition: var(--transition);
+.spinner {
+    --border-ss: 0.2px solid rgba(59, 59, 59, 0.626);
+    transition: all 0.3s;
+    display: flex;
+    height: 6px;
+    width: 28px;
+    background-color: rgb(255, 255, 255);
+    /* border: var(--border-ss); */
+    border-radius: var(--radius-xs);
 }
 
-.X:hover,
-.toggle-icon:hover {
-    color: rgb(149, 149, 149);
-    opacity: 0.5;
+.horizontal {
+    transition: all 0.3s;
+    /* float: left; */
+    margin-top: 5px;
+}
+
+.diagonal-1 {
+    transition: all 0.3s;
+    /* float: left; */
+}
+
+.diagonal-2 {
+    transition: all 0.3s;
+    /* float: left; */
+    margin-top: 5px;
+}
+
+input[type="checkbox"]:checked~.toggle-icon>.horizontal {
+    transition: all 0.3s;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"]:checked~.toggle-icon>.diagonal-1 {
+    transition: all 0.3s;
+    transform: rotate(135deg);
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"]:checked~.toggle-icon>.diagonal-2 {
+    transition: all 0.3s;
+    transform: rotate(-135deg);
+    margin-top: -17px;
+    box-sizing: border-box;
 }
 
 
+.sidebar {
+    /* opacity: 0; */
+    display: none;
 
+    transition: all 1s ease-in-out;
+}
 
 .close-btn {
     align-self: flex-end;
@@ -131,12 +192,8 @@ input::placeholder {
     border: var(--border-ss);
     padding: var(--xl);
     margin: var(--l) 0;
+    transition: var(--transition);
 
-
-}
-
-#hidden {
-    transition: display 2s;
 }
 
 .sidebar-background {
@@ -241,8 +298,6 @@ input::placeholder {
     font-size: larger;
     margin-left: -1px;
     cursor: pointer;
-
-
 }
 
 #myBtn {
@@ -265,6 +320,6 @@ input::placeholder {
 }
 
 .top-arrow {
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(107, 106, 106);
 }

@@ -94,15 +94,22 @@
 
     <main class="main-container">
         <!--sidebar and tags-->
-        <div class="sidebar">
+        <div class="sidebar-top"></div>
+        <input type="checkbox" class="open-sidebar" id="open-sidebar">
+        <label for="open-sidebar" class="toggle-icon">
 
-            <button id="toggle-sidebar" class="toggle-sidebar" onclick="openNav()">
+            <div class="spinner diagonal-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal-2"></div>
+        </label>
+        <div class="sidebar" id="sidebar">
+
+            <!--  <button id="toggle-sidebar" class="toggle-sidebar">
                 <img src="search-removebg-preview.png" alt="" class="toggle-icon">
-            </button>
+            </button> -->
 
 
             <nav class="sidebar-container sidebar-background" id="hidden">
-                <a href="javascript:void(0)" class="close-btn X" onclick="closeNav()">X</a>
                 <div class="search-bar">
                     <form action="" id="search-form">
                         <input type="text" id="search-input" placeholder="">
