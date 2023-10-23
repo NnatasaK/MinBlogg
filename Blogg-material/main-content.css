@@ -64,7 +64,7 @@ input::placeholder {
 
 body {
     max-width: 100rem;
-    margin: var(--l);
+    /* margin: var(--l); */
     border-radius: var(--radius-xs);
     background-image: url(customized/skull-and-tentacle-flipped.png);
     background-repeat: no-repeat;
@@ -95,8 +95,9 @@ body {
 .main-container {
     display: grid;
     width: min(95%, 100rem);
-    /*  margin-inline: auto; */
+    margin-inline: auto;
     gap: 1.5rem;
+    padding: var(--s);
 
 }
 
@@ -124,6 +125,7 @@ body {
     /* grid-area: posts; */
     display: grid;
     gap: 3rem;
+    margin-top: 2rem;
 
     /* margin-top: 2rem; */
 
@@ -155,6 +157,7 @@ body {
     display: grid;
     gap: 1rem;
 
+
     /*  border: 5px solid green; */
 }
 
@@ -181,7 +184,7 @@ body {
 
 .image-container>img {
 
-    width: 100%;
+    width: 90%;
     object-fit: cover;
     position: relative;
     border-radius: var(--radius-xs);
@@ -225,7 +228,7 @@ body {
     word-break: break-all;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 6;
     overflow: hidden;
 }
 
