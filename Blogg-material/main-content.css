@@ -61,6 +61,7 @@ input::placeholder {
 
 }
 
+
 body {
     max-width: 100rem;
     margin: var(--l);
@@ -76,7 +77,9 @@ body {
 }
 
 
+
 .latest-posts {
+
     font-family: var(--tags-font-family);
     font-size: var(--l);
     /* box-shadow: var(--box-regular); */
@@ -84,22 +87,56 @@ body {
 }
 
 .main-container {
+    width: min(95%, 100rem);
+    margin-inline: auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas:
+        'sidebar'
+        'posts'
+    ;
+}
+
+
+/* .main-background {
     background-color: rgba(230, 229, 229, 0.443);
     background-image: url(customized/skull-and-tentacle-2.png);
     background-repeat: no-repeat;
+    background-size: 50%;
     background-position: 65rem -2rem;
     background-size: 65rem;
 }
+ */
 
-
+.sidebar-toggle-container {
+    grid-area: sidebar;
+}
 
 .posts-container {
-
+    grid-area: posts;
+    display: grid;
+    width: min(90%, 60rem);
+    gap: 2rem;
     border-radius: var(--radius-xs);
+    /* margin-top: 2rem; */
 
 }
 
-.first-post-container {}
+@media (min-width: 50em) {
+    .main-container {
+        grid-template-areas:
+            'posts posts posts posts posts posts posts posts posts posts posts posts sidebar'
+            'posts posts posts posts posts posts posts posts posts posts posts posts sidebar'
+
+
+    }
+}
+
+
+
+.first-post-container {
+    flex-wrap: wrap;
+}
 
 
 .info-container {
@@ -122,7 +159,13 @@ body {
     font-weight: bolder;
 }
 
-.content-container {}
+.content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: max(60rem); */
+
+}
 
 .image-container>img {
 
@@ -134,7 +177,7 @@ body {
 }
 
 .image-container {
-
+    flex: 1;
     border-radius: var(--radius-xs);
     /*  border: 3px solid red; */
 
@@ -142,7 +185,7 @@ body {
 }
 
 .text-container {
-
+    flex: 1;
     font-family: var(--tags-font-family);
     letter-spacing: var(--xxs);
     padding: var(--l);
@@ -153,6 +196,14 @@ body {
 
     /*  border: 2px solid rgb(0, 34, 255); */
 }
+
+/* @media (min-width: 50em) {
+    .first-post-container {
+        grid-template-areas:
+            'photo photo text text'
+
+    }
+} */
 
 .title {
     background-color: white;

@@ -64,7 +64,7 @@ input::placeholder {
 .footer-main {
     display: flex;
     height: 18rem;
-    background-color: rgba(55, 55, 55, 0.454);
+    background-color: rgba(41, 41, 43, 0.911);
     padding: var(--xs);
     border-radius: var(--radius-xs);
 
