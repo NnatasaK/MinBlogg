@@ -34,8 +34,12 @@
     justify-content: center;
     align-items: end;
     /* gap: var(--xl); */
-    background-color: rgba(246, 247, 248, 0.578);
-    border: var(--border-ss);
+    /*  background-color: rgba(235, 235, 235, 0.443); */
+    border: 2px solid rgba(235, 235, 235, 0.881);
+    background-color: rgba(235, 235, 235, 0.443);
+    /*  position: fixed;
+    top: 0;
+    width: 100%; */
 
 
 }
@@ -46,32 +50,45 @@
 }
  */
 .header-middle {
-    height: 16rem;
-
-    border-left: var(--border-ss);
-    border-right: var(--border-ss);
+    flex: 1.2;
+    /* height: 16rem; */
+    background-color: rgb(127, 127, 196);
+    /* border: 1px solid black; */
+    border-left: 2px solid rgba(235, 235, 235, 0.881);
+    border-right: 2px solid rgba(235, 235, 235, 0.881);
+    ;
+    /* border-bottom: var(--border-ss);
 }
 
 .header-left {
+    flex: 1;
     padding-top: var(--s);
-    border-top: var(--border-ss);
+    /* border-top: var(--border-ss); */
 }
 
 .header-right {
-
+    flex: 1;
     padding-bottom: var(--xs);
     padding-top: 1.6rem;
-    border-top: var(--border-ss);
+
+    /* border-top: var(--border-ss); */
+}
+
+.header-left {
+    flex: 1;
+    padding-bottom: var(--xs);
+    padding-top: 0.8rem;
+
+    /* border-top: var(--border-ss); */
 }
 
 .header-left,
 .header-middle,
 .header-right {
 
-    /* margin: var(--m); */
-    flex: 1;
-    background-color: white;
-
+    margin: 0.1rem;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: inset 0 0 0 3px rgb(189, 206, 255); */
     /* border: var(--border-m); */
     /* padding-left: 5rem; */
 
@@ -99,8 +116,20 @@
 
 }
 
-.icons>img {
-    width: 65px;
+#sn-icons {
+    text-decoration: none;
+    color: black;
+}
+
+#glass-icons {
+    width: 80px;
+}
+
+#glass-icons:hover,
+#sn-icons:hover {
+    opacity: 0.4;
+    /*  box-shadow: 0px 0px 1px 1px black;
+    border-radius: 2px; */
 }
 
 .icons {
@@ -114,7 +143,6 @@
         /* flex-wrap: wrap; */
 }
 
-
 .blog-name-left,
 .blog-name-right {
     /*   position: absolute;
@@ -127,7 +155,7 @@
     /* font-weight: bold; */
     display: flex;
     color: var(--dark-purple);
-    font-size: 140%;
+    font-size: 150%;
     margin-bottom: var(--xs);
     text-shadow: 0px 5px 3px rgba(128, 128, 128, 0.575);
 
@@ -166,21 +194,22 @@
     /* border-radius: 30%; */
     /* background-color: var(--dark-purple); */
     /* box-shadow: var(--box-double2); */
-    rotate: -10deg;
-    max-width: 15rem;
-    animation-duration: 2.5s;
+    /* rotate: -10deg; */
+    max-width: 18rem;
+    /*  animation-duration: 2.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.01, 0, 0, 0.01);
+    animation-timing-function: cubic-bezier(0.01, 0, 0, 0.01); */
 
 }
 
-.photo {
+
+/*.photo {
     animation-name: shake;
 }
 
 @keyframes shake {
 
-    /*   from {
+      from {
         transform: translateX(0px)translateY(0px);
     }
 
@@ -190,29 +219,26 @@
 
     to {
         transform: translateX(0px) translateY(0px);
-    } */
-    0% {
-        transform: translateX(0px)translateY(0px);
-    }
-
-    5%,
-    25% {
-        transform: translateX(20px) translateY(20px)
-    }
-
-    15%,
-    35% {
-        transform: translateX(0px) translateY(0px);
-    }
-
-    40% {
-        transform: none;
-    }
-
+    } 
+0% {
+    transform: translateX(0px)translateY(0px);
 }
 
+5%,
+25% {
+    transform: translateX(20px) translateY(20px)
+}
 
+15%,
+35% {
+    transform: translateX(0px) translateY(0px);
+}
 
+40% {
+    transform: none;
+}
+
+}*/
 
 .empty {
     flex: 1;
@@ -221,7 +247,7 @@
 
 .text {
     border-top: var(--border-ss);
-    color: rgb(241, 238, 233);
+
     font-weight: 300;
     text-align: center;
     padding: var(--xs);
@@ -231,10 +257,10 @@
 .heading-container {
     display: flex;
     margin-bottom: var(--xl);
-    background-color: rgba(7, 50, 95, 0.84);
+    /* background-color: rgba(7, 50, 95, 0.84); */
 
     /* box-shadow: inset 0px 0px 10px 1px rgba(19, 22, 22, 0.728); */
-    margin-top: var(--xl);
+    margin-top: var(--l);
 
     /* background-color: var(--dark-purple-opaque); 
     color: whitesmoke;*/
@@ -252,15 +278,3 @@
     border-bottom: 3px solid rgba(0, 0, 0, 0.724);
 }  */
 
-.latest-posts {
-    /* box-shadow: var(--box-regular); */
-    /* background-color: var(--dark-purple); */
-    /* color: whitesmoke; */
-    color: var(--dark-purple);
-    font-size: large;
-    font-weight: 600;
-    margin-top: var(--xs);
-    padding: var(--xs);
-    background-color: rgb(255, 255, 255);
-    /* border-top: 3px solid var(--dark-purple-opaque); */
-}

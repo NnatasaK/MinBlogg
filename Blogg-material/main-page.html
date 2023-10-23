@@ -23,17 +23,29 @@
         <div class="header-left">
             <!--  <span class="categories">Cocktails by categories:</span> -->
             <div class="icons">
-                <img src="glass-photos/Coupe-Glass.png" alt="coupe glass">
-                <img src="glass-photos/Champagne-Glass.png" alt="champagne glass">
-                <img src="glass-photos/Old-Fashioned-Glass.png" alt="old fashioned glass">
-                <img src="glass-photos/Highball-Glass.png" alt="highball glass">
+                <a href="">
+                    <img id="glass-icons" src="glass-photos/Coupe-Glass.png" alt="coupe glass">
+                </a>
+                <a href="">
+                    <img id="glass-icons" src="glass-photos/Champagne-Glass.png" alt="champagne glass">
+                </a>
+                <a href="">
+                    <img id="glass-icons" src="glass-photos/Old-Fashioned-Glass.png" alt="old fashioned glass">
+                </a>
+                <a href="">
+                    <img id="glass-icons" src="glass-photos/Highball-Glass.png" alt="highball glass">
+                </a>
+
+
+
+
             </div>
 
         </div>
         <div class="header-middle">
             <div class="logo">
                 <span class="blog-name-left">DRINKDRINKS</span>
-                <img class="photo" src="glass-photos/Shaking-Tins.png" alt="">
+                <img class="photo" src="second-removebg-preview.png" alt="">
                 <span class="blog-name-right">DRINKDRINKS</span>
             </div>
 
@@ -42,10 +54,19 @@
         </div>
         <div class="header-right">
             <div class="icons">
-                <iconify-icon icon="arcticons:linkedin" width="47" height="47"></iconify-icon>
-                <iconify-icon icon="arcticons:twitter-alt-1" width="47" height="47"></iconify-icon>
-                <iconify-icon icon="arcticons:instagram" width="47" height="47"></iconify-icon>
-                <iconify-icon icon="arcticons:facebook" width="47" height="47"></iconify-icon>
+                <a href="http://www.linkedin.com">
+                    <iconify-icon id="sn-icons" icon="arcticons:linkedin" width="65"></iconify-icon>
+                </a>
+                <a href="http://www.twitter.com">
+                    <iconify-icon id="sn-icons" icon="arcticons:twitter-alt-1" width="65"></iconify-icon>
+                </a>
+                <a href="http://www.instagram.com">
+                    <iconify-icon id="sn-icons" icon="arcticons:instagram" width="65"></iconify-icon>
+                </a>
+                <a href="http://www.facebook.com">
+
+                    <iconify-icon id="sn-icons" icon="arcticons:facebook" width="65"></iconify-icon>
+                </a>
             </div>
         </div>
 
@@ -57,7 +78,7 @@
 
         </div>
         <h1 class="text">
-            Get inspired with our weekly creations, tips and all the fun things
+            Weekly updates, recipes and all the fun things
             from a
             world
             of
@@ -68,131 +89,237 @@
         </div>
 
     </section>
-    <div class="latest-posts">
-        Latest posts:
-    </div>
-
 
     <!--main container-->
 
-    <main class="main-container">
+    <main class="main-container main-background">
+        <!--sidebar and tags-->
+        <div class="sidebar-toogle-container">
+            <div class="sidebar-top"></div>
+            <input type="checkbox" class="open-sidebar" id="open-sidebar">
+            <label for="open-sidebar" class="toggle-icon">
+
+                <div class="spinner diagonal-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal-2"></div>
+            </label>
+            <div class="sidebar" id="sidebar">
+
+                <!--  <button id="toggle-sidebar" class="toggle-sidebar">
+                    <img src="search-removebg-preview.png" alt="" class="toggle-icon">
+                </button> -->
+
+
+                <nav class="sidebar-container sidebar-background" id="hidden">
+                    <div class="search-bar">
+                        <form action="" id="search-form">
+                            <input type="text" id="search-input" placeholder="">
+                            <button class="search-button">Search</button>
+                        </form>
+                    </div>
+
+
+
+                    <div class="articles-container">
+                        <h1 id="nav-headings">Post archives</h1>
+                        <ul>
+                            <li>
+                                <a id="archive-tags" href="blog-post-1.html">November 2023</a>
+                            </li>
+                            <li>
+                                <a id="archive-tags" href="blog-post-1.html">Avgust 2023</a>
+                            </li>
+                            <li>
+                                <a id="archive-tags" href="blog-post-1.html">March 2023</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tags-container">
+                        <h1 id="nav-headings">Tags</h1>
+                        <div class="tag-container">
+                            <a id="tag" href="#sn-icons">cocktails</a>
+                            <a id="tag" href="">recipes</a>
+                            <a id="tag" href="">mixology</a>
+                            <a id="tag" href="">history</a>
+                            <a id="tag" href="">tips & tricks</a>
+                            <a id="tag" href="">inspiration</a>
+                        </div>
+                    </div>
+
+                </nav>
+
+            </div>
+        </div>
+
+
+
 
         <div class="posts-container">
-
-            <div class="first-post-container">
-
-
-
-                <div class="content-container">
-
-                    <div class="image-container">
-
-                        <p class="info-container">
-                            By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/11/2023
-                        </p>
-                        <img src="customized/1.jpg" alt="">
-                    </div>
-
-
-                    <div class="text-container">
-                        <p class="title">
-                            2023 highlights
-                        </p>
-                        <p class="text-main">
-
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
-                            repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
-                            tempore vitae quae architecto omnis.
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
-                            repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
-                            tempore vitae quae architecto omnis.Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Iusto nam consequatur adipisci cum
-                            repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
-                            tempore vitae quae architecto omnis.Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Iusto nam consequatur adipisci cum
-                            repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
-                            tempore vitae quae architecto omnis.
-                        </p>
-                        <a class="blog-post-1" href="blog-post-1.html">
-                            <button class="read-more">Read full article ➱
-                            </button>
-                        </a>
-
-
-
-                    </div>
-                </div>
+            <div class="latest-posts">
+                Latest posts:
             </div>
-            <div class="first-post-container">
+            <div class="content-container">
+
+                <div class="image-container">
+
+                    <p class="info-container">
+                        By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/11/2023
+                    </p>
+                    <img src="customized/2.jpg" alt="">
+                </div>
 
 
-                <div class="content-container">
+                <div class="text-container">
+                    <p class="title">
+                        2023 highlights
+                    </p>
+                    <p class="text-main">
 
-                    <div class="image-container">
-                        <p class="info-container">
-                            By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/01/2013
-                        </p>
-                        <img id="smaller-img" src="customized/5.jpg" alt="">
-                    </div>
-                    <div class="text-container">
-                        <p class="title">
-                            DO`S & DONT`S
-                        </p>
-                        <p class="text-main" id="text-long">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
-                            repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
-                            tempore vitae quae architecto omnis..text-container Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Debitis quam voluptas in quae aspernatur. Reiciendis eum consequuntur
-                            tempore repellat dolor nostrum, quod error, laudantium dolore sunt ipsa? Omnis, ad et? Lorem
-                            ipsum dolor sit amet consectetur, adipisicing elit. Est, vel neque! Facere facilis nihil ex
-                            atque velit quam, nisi, totam nam temporibus architecto itaque, repudiandae est officiis
-                            natus corrupti. Aperiam?
-                        </p>
-                        <button class="read-more">Read full article</button>
-                    </div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.
+                    </p>
+                    <a class="blog-post-1" href="blog-post-1.html">
+                        <button class="read-more">Read full article ➱
+                        </button>
+                    </a>
 
                 </div>
             </div>
+            <div class="content-container">
 
+                <div class="image-container">
+
+                    <p class="info-container">
+                        By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/11/2023
+                    </p>
+                    <img src="4.jpg" alt="">
+                </div>
+
+
+                <div class="text-container">
+                    <p class="title">
+                        2023 highlights
+                    </p>
+                    <p class="text-main">
+
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.
+                    </p>
+                    <a class="blog-post-1" href="blog-post-1.html">
+                        <button class="read-more">Read full article ➱
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+            <div class="content-container">
+
+                <div class="image-container">
+
+                    <p class="info-container">
+                        By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/11/2023
+                    </p>
+                    <img src="customized/11.jpg" alt="">
+                </div>
+
+
+                <div class="text-container">
+                    <p class="title">
+                        2023 highlights
+                    </p>
+                    <p class="text-main">
+
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.
+                    </p>
+                    <a class="blog-post-1" href="blog-post-1.html">
+                        <button class="read-more">Read full article ➱
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+            <div class="content-container">
+
+                <div class="image-container">
+
+                    <p class="info-container">
+                        By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/11/2023
+                    </p>
+                    <img src="customized/10.jpg" alt="">
+                </div>
+
+
+                <div class="text-container">
+                    <p class="title">
+                        2023 highlights
+                    </p>
+                    <p class="text-main">
+
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Iusto nam consequatur adipisci cum
+                        repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
+                        tempore vitae quae architecto omnis.
+                    </p>
+                    <a class="blog-post-1" href="blog-post-1.html">
+                        <button class="read-more">Read full article ➱
+                        </button>
+                    </a>
+
+                </div>
+            </div>
 
         </div>
-        <!--nav bar and tags-->
-        <nav class="sidebar-container" id="sidebar-background">
-            <div class="search-bar">
-                <form action="" class="search-form">
-                    <input type="text" id="search-input" placeholder="">
-                    <button class="search-button">Search</button>
-                </form>
-            </div>
-
-
-            <h1>Post archives</h1>
-            <div class="articles-container">
-
-                <ul>
-                    <li>
-                        <a id="archive-tags" href="blog-post-1.html">November 2023</a>
-                    </li>
-                    <li>
-                        <a id="archive-tags" href="blog-post-1.html">Avgust 2023</a>
-                    </li>
-                    <li>
-                        <a id="archive-tags" href="blog-post-1.html">March 2023</a>
-                    </li>
-                </ul>
-            </div>
-            <h1>Tags</h1>
-            <div class="tags-container">
-                <a id="tag" href="">cocktails</a>
-                <a id="tag" href="">recipes</a>
-                <a id="tag" href="">mixology</a>
-                <a id="tag" href="">history</a>
-                <a id="tag" href="">tips & tricks</a>
-                <a id="tag" href="">inspiration</a>
-            </div>
-        </nav>
-
     </main>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <span class="top-arrow">&#8593;</span>
+    </button>
+    <footer class="footer-main">
+        <div class="footer-content">
+            <img class="footer-photo" src="second-removebg-preview.png" alt="">
+            <p class="drinks">DRINKDRINKS</p>
+        </div>
+
+    </footer>
+    <script src="main-page.js"></script>
 </body>
 
 
