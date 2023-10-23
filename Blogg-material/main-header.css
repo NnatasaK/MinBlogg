@@ -278,14 +278,3 @@
     border-bottom: 3px solid rgba(0, 0, 0, 0.724);
 }  */
 
-.latest-posts {
-    font-size: large;
-    font-weight: 600;
-    width: fit-content;
-    margin-bottom: var(--l);
-    margin-top: var(--l);
-    padding: var(--s);
-    /* border: 2px solid rgba(128, 128, 128, 0.45); */
-    /* background-color: rgba(255, 255, 255, 0.963); */
-    /* border-top: 3px solid var(--dark-purple-opaque); */
-}
