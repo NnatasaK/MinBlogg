@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 input,
@@ -61,10 +62,12 @@ input::placeholder {
 }
 
 body {
+    background: none !important;
     max-width: 100rem;
     margin: var(--l);
     border: var(--border-m);
     border-radius: var(--radius-xs);
+    font-family: var(--tags-font-family);
 }
 
 .blog-post-1-container>* {
@@ -91,4 +94,27 @@ body {
 
 h1 {
     text-align: center;
+}
+
+.closing-credits {
+    background-color: rgba(97, 104, 205, 0.799);
+    border-radius: var(--xxs);
+    border: 1px solid white;
+
+}
+
+.closing-credits-container {
+    padding: var(--s);
+    color: whitesmoke;
+}
+
+p>a {
+    padding: var(--s);
+    color: rgb(2, 2, 2);
+}
+
+.about-the-author {
+    background-color: rgba(255, 255, 255, 0.799);
+    border-radius: var(--xxs);
+    border: var(--border-s);
 }
