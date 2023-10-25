@@ -11,7 +11,7 @@
 input,
 button,
 input::placeholder {
-    font-family: inherit;
+    font-family: var(--text-font-family);
     color: inherit;
 }
 
@@ -67,11 +67,7 @@ body {
     margin: var(--l);
     border: var(--border-m);
     border-radius: var(--radius-xs);
-    font-family: var(--tags-font-family);
-}
 
-.blog-post-1-container>* {
-    font-family: var(--text-font-family);
 }
 
 .blog-post-1-container {
@@ -81,6 +77,7 @@ body {
 }
 
 #page-title {
+    font-family: var(--text-font-family);
     border: var(--border-m);
     padding: var(--m);
     border-radius: var(--radius-xs);
@@ -90,10 +87,10 @@ body {
     margin: var(--xl);
 }
 
-
-
-h1 {
+.blog-post-1-container>h1 {
     text-align: center;
+    font-weight: 300;
+
 }
 
 .closing-credits {
