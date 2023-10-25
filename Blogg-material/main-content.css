@@ -97,13 +97,14 @@ body {
     width: min(95%, 100rem);
     margin-inline: auto;
     gap: 1.5rem;
-    padding: var(--s);
+    padding-left: var(--m);
+    padding-right: var(--m);
 
 }
 
 
 .main-background {
-    background-color: rgba(245, 241, 241, 0.575);
+    /* background-color: rgba(245, 241, 241, 0.575); */
     /*  background-image: url(customized/cutout-4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
