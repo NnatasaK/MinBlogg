@@ -72,7 +72,7 @@ input::placeholder {
 }
 
 body {
-    background: none !important;
+    background: none;
     max-width: 100rem;
     margin-inline: auto;
     border: var(--border-m);
@@ -104,6 +104,10 @@ body {
 
 .title-cover {
     font-size: var(--clamp-title);
+}
+
+*>img {
+    border-radius: var(--radius-xs);
 }
 
 *>h1 {
@@ -232,26 +236,64 @@ h2 {
 }
 
 .closing-credits {
-    background-color: rgba(97, 104, 205, 0.799);
-    border-radius: var(--xxs);
+    margin-bottom: 10rem;
+    font-family: var(--tags-font-family);
+    background-color: rgba(135, 135, 135, 0.719);
+    border-radius: var(--xs);
     border: 1px solid white;
 
 }
 
 .closing-credits-container {
-    padding: var(--s);
-    color: whitesmoke;
+    padding: var(--m);
+    font-size: var(--m);
+    color: rgba(19, 19, 19, 0.719);
 }
 
-p>a {
-    padding: var(--s);
-    color: rgb(2, 2, 2);
+*>a {
+    padding: var(--xs);
+    color: rgb(254, 254, 254);
+    transition: var(--transition);
+}
+
+*>a:hover {
+    color: rgba(105, 57, 141, 0.719);
 }
 
 .about-the-author {
-    background-color: rgba(255, 255, 255, 0.799);
+    background-color: rgba(130, 117, 139, 0.176);
     border-radius: var(--xxs);
-    border: var(--border-s);
+
+    /* padding: var(--m); */
+    /* border: var(--border-s); */
+}
+
+.about-author-header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--m);
+    /*  border-bottom: var(--border-m); */
+    font-size: var(--m);
+    background-color: rgba(239, 237, 237, 0.699);
+}
+
+.about-author-links {
+    padding: 0 !important;
+    font-size: var(--s) !important;
+
+}
+
+
+
+.tags-container-last {
+    align-content: flex-end;
+}
+
+.about-author-text {
+    background-color: rgb(244, 244, 244);
+    padding: var(--m);
+    color: rgb(53, 53, 53);
+    border: 1px solid rgb(235, 235, 235);
 }
 
 @media (max-width:50em) {
