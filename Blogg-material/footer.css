@@ -77,6 +77,7 @@ input::placeholder {
 
 
 .footer-photo {
+    position: relative;
     width: 7rem;
     height: 7rem;
     border: 1px solid rgba(255, 255, 255, 0.53);
@@ -171,5 +172,13 @@ a {
 
 #s-icons {
     color: white;
+
+}
+
+.copyright {
+    position: absolute;
+    left: 2rem;
+    transform: translateY(35px);
+    color: rgb(255, 255, 255);
 
 }
