@@ -77,10 +77,7 @@ input::placeholder {
 
 }
 
-/* .sidebar-toggle-container {
-    position: relative;
-}
- */
+
 .main-container {
     position: relative;
 
@@ -90,8 +87,6 @@ input::placeholder {
     position: absolute;
     right: 0px;
     --box-subtle: 1px 1px 3px 0px rgba(90, 90, 90, 0.753);
-    /* display: flex; */
-
     width: 100%;
     height: 3.6rem;
     overflow: hidden;
@@ -99,16 +94,11 @@ input::placeholder {
     background-color: rgb(61, 58, 59);
     border-radius: var(--radius-m);
     box-shadow: var(--box-subtle);
-    /*  border: 0.5px solid white; */
-
 
 }
 
 input[type="checkbox"]:checked~.sidebar {
     display: contents;
-    /* opacity: 1; */
-
-
 }
 
 input[type="checkbox"] {
@@ -138,19 +128,16 @@ input[type="checkbox"] {
     height: 6px;
     width: 28px;
     background-color: rgb(255, 254, 254);
-    /* border: var(--border-ss); */
     border-radius: var(--radius-xs);
 }
 
 .horizontal {
     transition: all 0.3s;
-    /* float: left; */
     margin-top: 5px;
 }
 
 .diagonal-1 {
     transition: all 0.3s;
-    /* float: left; */
 }
 
 .diagonal-2 {
@@ -181,7 +168,6 @@ input[type="checkbox"]:checked~.toggle-icon>.diagonal-2 {
 
 
 .sidebar {
-    /* opacity: 0; */
     display: none;
     transition: all 1s ease-in-out;
 
@@ -282,7 +268,8 @@ input[type="checkbox"]:checked~.toggle-icon>.diagonal-2 {
 
 #archive-tags:hover,
 #tag:hover {
-    opacity: 0.5;
+    opacity: 0.8;
+    color: rgba(43, 11, 67, 0.719)
 }
 
 #nav-headings {
@@ -328,7 +315,7 @@ input[type="checkbox"]:checked~.toggle-icon>.diagonal-2 {
     right: 2.5rem;
     cursor: pointer;
     --box-info: 0.1px -0.1px 2px 1px rgba(37, 36, 36, 0.486);
-    background-color: rgba(239, 237, 237, 0.566);
+    background-color: rgba(219, 219, 219, 0.566);
     box-shadow: var(--box-info);
     padding: var(--xs) var(--s);
     border-radius: var(--radius-xs);
@@ -336,7 +323,8 @@ input[type="checkbox"]:checked~.toggle-icon>.diagonal-2 {
 }
 
 #myBtn:hover {
-    background-color: rgba(167, 166, 166, 0.279);
+    background-color: rgb(255, 255, 255);
+
 
 }
 

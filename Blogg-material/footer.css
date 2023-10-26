@@ -76,18 +76,13 @@ input::placeholder {
 }
 
 
-
-
-
 .footer-photo {
-    /* opacity: 0.8; */
     width: 7rem;
     height: 7rem;
     border: 1px solid rgba(255, 255, 255, 0.53);
     border-radius: var(--radius-xs);
     margin-left: var(--m);
     margin-top: var(--m);
-    /* background-color: rgb(35, 35, 35); */
 }
 
 .drinks {
@@ -176,4 +171,5 @@ a {
 
 #s-icons {
     color: white;
+
 }
