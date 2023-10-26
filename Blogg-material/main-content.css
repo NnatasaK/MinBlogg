@@ -82,7 +82,7 @@ body {
 
     font-family: var(--tags-font-family);
     color: rgb(6, 6, 6);
-    font-size: var(--l);
+    font-size: var(--xl);
     font-weight: 600;
     width: fit-content;
     /* margin-bottom: var(--l); */
@@ -156,7 +156,7 @@ body {
 
 .content-container {
     display: grid;
-    gap: 1rem;
+    gap: 0.5rem;
 
 
     /*  border: 5px solid green; */
@@ -185,7 +185,7 @@ body {
 
 .image-container>img {
 
-    width: 90%;
+    width: 100%;
     object-fit: cover;
     position: relative;
     border-radius: var(--radius-xs);
@@ -202,7 +202,7 @@ body {
 
     font-family: var(--tags-font-family);
     letter-spacing: var(--xxs);
-    padding: var(--l);
+    padding: var(--s);
     border-radius: var(--radius-xs);
     display: grid;
     align-items: center;
@@ -235,7 +235,7 @@ body {
 
 .read-more {
     max-width: fit-content;
-    margin: var(--l);
+    margin: var(--s);
     padding: var(--xs);
     border-radius: var(--radius-xs);
     border: var(--border-s);
@@ -246,16 +246,17 @@ body {
     letter-spacing: var(--xxs);
     font-weight: 500;
     transform: translate(-20%);
-
+    transition: var(--transition);
 }
 
 
 
 .read-more:hover {
+
     box-shadow: var(--box-button);
     border: none;
     border-radius: 0.5px;
     cursor: pointer;
-    transition: var(--transition);
+
 
 }

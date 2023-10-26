@@ -282,7 +282,8 @@ input[type="checkbox"]:checked~.toggle-icon>.diagonal-2 {
 
 #archive-tags:hover,
 #tag:hover {
-    opacity: 0.5;
+    opacity: 0.8;
+    color: rgba(43, 11, 67, 0.719)
 }
 
 #nav-headings {
@@ -328,7 +329,7 @@ input[type="checkbox"]:checked~.toggle-icon>.diagonal-2 {
     right: 2.5rem;
     cursor: pointer;
     --box-info: 0.1px -0.1px 2px 1px rgba(37, 36, 36, 0.486);
-    background-color: rgba(239, 237, 237, 0.566);
+    background-color: rgba(219, 219, 219, 0.566);
     box-shadow: var(--box-info);
     padding: var(--xs) var(--s);
     border-radius: var(--radius-xs);
@@ -336,7 +337,8 @@ input[type="checkbox"]:checked~.toggle-icon>.diagonal-2 {
 }
 
 #myBtn:hover {
-    background-color: rgba(167, 166, 166, 0.279);
+    background-color: rgb(255, 255, 255);
+
 
 }
 
