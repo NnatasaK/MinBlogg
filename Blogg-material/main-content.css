@@ -55,7 +55,7 @@ input::placeholder {
     --box-inner: inset 0px 0px 10px 1px rgba(19, 22, 22, 0.728);
     --box-regular: 0px 0px 1px 0.1px rgba(56, 57, 57, 0.559),
         inset 0px 0px 1px 0.1px rgba(38, 38, 38, 0.724);
-    --box-title: 3px -3px rgba(0, 0, 0, 0.995);
+    --box-title: 6px -6px rgba(76, 76, 76, 0.616);
     --box-info: -1px -1px rgb(0, 0, 0);
     --box-button: 0px 1px 0px 1.1px rgba(0, 0, 0, 0.995);
 

@@ -30,6 +30,7 @@ input::placeholder {
     --s: 1rem;
     --xs: .5rem;
     --xxs: .1rem;
+    --clamp: clamp(3rem, 12vw, 5rem);
 
     /* colors */
 
@@ -56,7 +57,7 @@ input::placeholder {
     --box-inner: inset 0px 0px 10px 1px rgba(19, 22, 22, 0.728);
     --box-regular: 0px 0px 1px 0.1px rgba(56, 57, 57, 0.559),
         inset 0px 0px 1px 0.1px rgba(38, 38, 38, 0.724);
-    --box-title: 3px -3px rgba(0, 0, 0, 0.995);
+    --box-title: 6px -6px rgba(137, 137, 137, 0.616);
     --box-info: -1px -1px rgb(0, 0, 0);
     --box-button: 0px 1px 0px 1.1px rgba(0, 0, 0, 0.995);
 }
@@ -64,21 +65,24 @@ input::placeholder {
 body {
     background: none !important;
     max-width: 100rem;
-    margin: var(--l);
+    margin-inline: auto;
     border: var(--border-m);
     border-radius: var(--radius-xs);
 
 }
 
 .blog-post-1-container {
+    /*  background-color: rgba(241, 240, 240, 0.89); */
+    border: 2px solid rgba(224, 221, 221, 0.514);
     display: flex;
     flex-direction: column;
     margin: var(--l);
 }
 
 #page-title {
+
     font-family: var(--text-font-family);
-    border: var(--border-m);
+    border: 1px solid gray;
     padding: var(--m);
     border-radius: var(--radius-xs);
     box-shadow: var(--box-title);
@@ -87,9 +91,62 @@ body {
     margin: var(--xl);
 }
 
-.blog-post-1-container>h1 {
+.title-cover {
+    font-size: var(--clamp);
+}
+
+*>h1 {
+
+    color: rgba(0, 0, 0, 0.769);
     text-align: center;
-    font-weight: 300;
+    font-family: var(--tags-font-family);
+    font-style: normal;
+    font-weight: max(700);
+    line-height: 5rem;
+    margin-inline: auto;
+    margin-bottom: var(--xxl);
+    padding: var(--m) 0;
+    border-bottom: 5px solid gray;
+    border-top: 5px solid gray;
+    border-style: double;
+    /* width: 60rem; */
+
+}
+
+
+
+.cover-page {
+    display: flex;
+    flex-direction: column;
+    padding: var(--m) 0;
+    margin: 0 10rem;
+}
+
+@media (max-width:50em) {
+    .cover-page {
+        margin: 0;
+    }
+}
+
+.gallery-container {
+
+
+
+    border: 2px solid rgba(224, 221, 221, 0.514);
+}
+
+.gallery-image {
+
+    width: 100%;
+    border-radius: var(--radius-xs);
+}
+
+.cover-text {
+
+    font-family: var(--tags-font-family);
+    line-height: 30px;
+    font-size: var(--m);
+    margin: var(--xl);
 
 }
 
