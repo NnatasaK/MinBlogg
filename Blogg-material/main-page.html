@@ -14,14 +14,20 @@
     <link rel="stylesheet" href="main-nav.css">
     <link rel="stylesheet" href="footer.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <title>Document</title>
+
+    <title>Front page</title>
 </head>
 
+
 <body>
-    <!--logo and icons section-->
+
+    <!--header section-->
+
     <header class="header">
+
+        <!-- Left side with glass icons -->
+
         <div class="header-left">
-            <!--  <span class="categories">Cocktails by categories:</span> -->
             <div class="icons">
                 <a href="">
                     <img id="glass-icons" src="glass-photos/Coupe-Glass.png" alt="coupe glass">
@@ -35,20 +41,22 @@
                 <a href="">
                     <img id="glass-icons" src="glass-photos/Highball-Glass.png" alt="highball glass">
                 </a>
-
             </div>
-
         </div>
+
+        <!-- Middle part with logo -->
+
         <div class="header-middle">
             <div class="logo">
                 <span class="blog-name-left">DRINKDRINKS</span>
-                <img class="photo" src="second-removebg-preview.png" alt="">
+                <img class="photo" src="second-removebg-preview.png" alt="Two hands holding a cocktail">
                 <span class="blog-name-right">DRINKDRINKS</span>
             </div>
-
         </div>
 
-        </div>
+
+        <!-- Right side with social networks icons -->
+
         <div class="header-right">
             <div class="icons">
                 <a href="http://www.linkedin.com">
@@ -61,15 +69,13 @@
                     <iconify-icon id="sn-icons" icon="arcticons:instagram" width="65"></iconify-icon>
                 </a>
                 <a href="http://www.facebook.com">
-
                     <iconify-icon id="sn-icons" icon="arcticons:facebook" width="65"></iconify-icon>
                 </a>
             </div>
         </div>
-
     </header>
 
-    <!--h1 and h2-->
+    <!--h1-->
 
     <h1 class="text">
         Take your drinks drinking to a whole new level!
@@ -78,8 +84,13 @@
     <!--main container-->
 
     <main class="main-container main-background">
-        <!--sidebar and tags-->
+
+        <!--sidebar container-->
+
         <div class="sidebar-toogle-container">
+
+            <!-- sidebar hamburger menu -->
+
             <div class="sidebar-top"></div>
             <input type="checkbox" class="open-sidebar" id="open-sidebar">
             <label for="open-sidebar" class="toggle-icon">
@@ -87,15 +98,16 @@
                 <div class="spinner diagonal-1"></div>
                 <div class="spinner horizontal"></div>
                 <div class="spinner diagonal-2"></div>
+
             </label>
+
+            <!-- sidebar start-->
+
             <div class="sidebar" id="sidebar">
-
-                <!--  <button id="toggle-sidebar" class="toggle-sidebar">
-                    <img src="search-removebg-preview.png" alt="" class="toggle-icon">
-                </button> -->
-
-
                 <nav class="sidebar-container sidebar-background" id="hidden">
+
+                    <!-- Search input -->
+
                     <div class="search-bar">
                         <form action="" id="search-form">
                             <input type="text" id="search-input" placeholder="">
@@ -103,7 +115,7 @@
                         </form>
                     </div>
 
-
+                    <!-- Post archives -->
 
                     <div class="articles-container">
                         <h1 id="nav-headings">Post archives</h1>
@@ -112,13 +124,16 @@
                                 <a id="archive-tags" href="blog-post-1.html">November 2023</a>
                             </li>
                             <li>
-                                <a id="archive-tags" href="blog-post-1.html">Avgust 2023</a>
+                                <a id="archive-tags" href="blog-post-2.html">Avgust 2023</a>
                             </li>
                             <li>
-                                <a id="archive-tags" href="blog-post-1.html">March 2023</a>
+                                <a id="archive-tags" href="blog-post-3.html">March 2023</a>
                             </li>
                         </ul>
                     </div>
+
+                    <!-- Sidebar Tags -->
+
                     <div class="tags-container">
                         <h1 id="nav-headings">Tags</h1>
                         <div class="tag-container">
@@ -137,16 +152,20 @@
         </div>
 
 
-
+        <!-- Posts on the left -->
 
         <div class="posts-container">
+
+            <!-- Latest Posts Title -->
+
             <div class="latest-posts">
                 Latest posts:
             </div>
-            <div class="content-container blog-post" id="cocktails">
+
+            <!-- FIRST POST -->
+            <section class="content-container blog-post" id="cocktails">
 
                 <div class="image-container">
-
                     <p class="info-container">
                         By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/11/2023
                     </p>
@@ -174,17 +193,20 @@
                         repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
                         tempore vitae quae architecto omnis.
                     </p>
+
+
                     <a class="blog-post-1" href="blog-post-1.html">
                         <button class="read-more">Read full article ➱
                         </button>
                     </a>
-
                 </div>
-            </div>
-            <div class="content-container blog-post">
+            </section>
+
+            <!-- SECOND POST -->
+
+            <section class="content-container blog-post">
 
                 <div class="image-container">
-
                     <p class="info-container">
                         By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/11/2023
                     </p>
@@ -211,17 +233,19 @@
                         repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
                         tempore vitae quae architecto omnis.
                     </p>
+
                     <a class="blog-post-1" href="blog-post-1.html">
                         <button class="read-more">Read full article ➱
                         </button>
                     </a>
-
                 </div>
-            </div>
-            <div class="content-container blog-post">
+            </section>
+
+            <!-- THIRD POST -->
+
+            <section class="content-container blog-post">
 
                 <div class="image-container">
-
                     <p class="info-container">
                         By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/11/2023
                     </p>
@@ -248,17 +272,20 @@
                         repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
                         tempore vitae quae architecto omnis.
                     </p>
+
                     <a class="blog-post-1" href="blog-post-1.html">
                         <button class="read-more">Read full article ➱
                         </button>
                     </a>
-
                 </div>
-            </div>
-            <div class="content-container blog-post">
+            </section>
+
+            <!-- FOURTH POST -->
+
+
+            <section class="content-container blog-post">
 
                 <div class="image-container">
-
                     <p class="info-container">
                         By: Nataša Kolarić &nbsp;<span class="entity">&#183;</span>&nbsp; posted: 08/11/2023
                     </p>
@@ -285,19 +312,23 @@
                         repudiandae inventore labore ab totam mollitia doloribus vero sequi dolorem, fuga, minima
                         tempore vitae quae architecto omnis.
                     </p>
+
                     <a class="blog-post-1" href="blog-post-1.html">
                         <button class="read-more">Read full article ➱
                         </button>
                     </a>
-
                 </div>
-            </div>
-
+            </section>
         </div>
     </main>
+
+    <!-- Back To Top Button -->
+
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         <span class="top-arrow">&#8593;</span>
     </button>
+
+    <!-- FOOTER -->
     <footer class="footer-main">
         <div class="footer-content">
             <img class="footer-photo" src="second-removebg-preview.png" alt="">
@@ -310,7 +341,6 @@
                 <input type="email" name="email" id="email" placeholder="Enter your email">
                 <button id="sign-up-button" type="button">SIGN UP</button>
             </form>
-
         </div>
         <div class="footer-content-links">
             <div class="links-all">
@@ -329,21 +359,20 @@
             </div>
             <div class="icons">
                 <a href="http://www.linkedin.com">
-                    <iconify-icon id="s-icons" icon="arcticons:linkedin" width="65"></iconify-icon>
+                    <iconify-icon id="s-icons" icon="arcticons:linkedin" width="45"></iconify-icon>
                 </a>
                 <a href="http://www.twitter.com">
-                    <iconify-icon id="s-icons" icon="arcticons:twitter-alt-1" width="65"></iconify-icon>
+                    <iconify-icon id="s-icons" icon="arcticons:twitter-alt-1" width="45"></iconify-icon>
                 </a>
                 <a href="http://www.instagram.com">
-                    <iconify-icon id="s-icons" icon="arcticons:instagram" width="65"></iconify-icon>
+                    <iconify-icon id="s-icons" icon="arcticons:instagram" width="45"></iconify-icon>
                 </a>
                 <a href="http://www.facebook.com">
 
-                    <iconify-icon id="s-icons" icon="arcticons:facebook" width="65"></iconify-icon>
+                    <iconify-icon id="s-icons" icon="arcticons:facebook" width="45"></iconify-icon>
                 </a>
             </div>
         </div>
-
     </footer>
     <script src="main-page.js"></script>
 </body>

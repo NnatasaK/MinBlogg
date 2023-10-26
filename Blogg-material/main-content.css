@@ -17,7 +17,6 @@ input::placeholder {
 :root {
 
     /* font-family */
-    --heading-font-family: 'Alegreya', serif;
     --text-font-family: 'Montserrat Alternates', sans-serif;
     --tags-font-family: 'Raleway', sans-serif;
 
@@ -29,6 +28,12 @@ input::placeholder {
     --s: 1rem;
     --xs: .5rem;
     --xxs: .1rem;
+
+    /* font clamp */
+
+    --clamp-title: clamp(3rem, 12vw, 5rem);
+    --clamp-heading: clamp(1.5rem, 10vw, 2.7rem);
+    --clamp-text: clamp(0.5rem, 10vw, 1.2rem);
 
     /* colors */
 
@@ -64,18 +69,16 @@ input::placeholder {
 
 body {
     max-width: 100rem;
-    /* margin: var(--l); */
     border-radius: var(--radius-xs);
     background-image: url(customized/skull-and-tentacle-flipped.png);
     background-repeat: no-repeat;
-    /*  background-attachment: fixed; */
+    background-attachment: fixed;
     background-size: 33rem;
     background-position: 0rem -1.1rem;
     background-blend-mode: overlay;
     background-color: rgba(255, 255, 255, 0.422);
 
 }
-
 
 
 .latest-posts {
@@ -85,10 +88,7 @@ body {
     font-size: var(--xl);
     font-weight: 600;
     width: fit-content;
-    /* margin-bottom: var(--l); */
     margin-top: var(--l);
-    /* padding: var(--s); */
-    /* box-shadow: var(--box-regular); */
 
 }
 
@@ -103,33 +103,18 @@ body {
 }
 
 
-.main-background {
-    /* background-color: rgba(245, 241, 241, 0.575); */
-    /*  background-image: url(customized/cutout-4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: hue;
-    /* background-position: 55rem 80rem; */
-    background-size: 65rem;
-
-}
-
 
 .sidebar-toggle-container {
     grid-area: sidebar;
 
 }
 
-.sidebar {}
 
 .posts-container {
-    /* grid-area: posts; */
+
     display: grid;
     gap: 3rem;
     margin-top: 2rem;
-
-    /* margin-top: 2rem; */
-
 }
 
 
@@ -157,30 +142,6 @@ body {
 .content-container {
     display: grid;
     gap: 0.5rem;
-
-
-    /*  border: 5px solid green; */
-}
-
-@media (min-width:50em) {
-
-    .content-container {
-        grid-template-columns: 1fr 1fr
-    }
-
-    .main-container {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            'posts posts posts sidebar'
-            'posts posts posts sidebar'
-            'posts posts posts sidebar'
-            'posts posts posts sidebar'
-    }
-
-    .posts-container {
-        grid-area: posts;
-        grid-column: span 3;
-    }
 }
 
 .image-container>img {
@@ -193,8 +154,6 @@ body {
 
 .image-container {
     border-radius: var(--radius-xs);
-    /* border: 3px solid red; */
-    /* aspect-ratio: 1/1; */
 
 }
 
@@ -206,9 +165,6 @@ body {
     border-radius: var(--radius-xs);
     display: grid;
     align-items: center;
-
-
-    /* border: 2px solid rgb(0, 34, 255); */
 }
 
 .title {
@@ -233,6 +189,8 @@ body {
     overflow: hidden;
 }
 
+
+/* Open a full post BUTTON */
 .read-more {
     max-width: fit-content;
     margin: var(--s);
@@ -252,11 +210,31 @@ body {
 
 
 .read-more:hover {
-
     box-shadow: var(--box-button);
     border: none;
     border-radius: 0.5px;
     cursor: pointer;
+}
 
+/* Grid display on larger screens */
 
+@media (min-width:50em) {
+
+    .content-container {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .main-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            'posts posts posts sidebar'
+            'posts posts posts sidebar'
+            'posts posts posts sidebar'
+            'posts posts posts sidebar'
+    }
+
+    .posts-container {
+        grid-area: posts;
+        grid-column: span 3;
+    }
 }

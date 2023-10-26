@@ -32,11 +32,7 @@ input::placeholder {
     --xxs: .1rem;
 
 
-    /* font clamp */
 
-    --clamp-title: clamp(3rem, 12vw, 5rem);
-    --clamp-heading: clamp(1.5rem, 10vw, 2.7rem);
-    --clamp-text: clamp(0.5rem, 10vw, 1.2rem);
 
     /* colors */
 
@@ -81,8 +77,6 @@ body {
 }
 
 .blog-post-1-container {
-    /*  background-color: rgba(241, 240, 240, 0.89); */
-    /*  border: 2px solid rgba(224, 221, 221, 0.514); */
     display: flex;
     flex-direction: column;
     margin: var(--l);
@@ -152,7 +146,6 @@ body {
 .gallery-image {
     object-fit: contain;
     width: 100%;
-    /* padding: 0 5rem; */
 
 }
 
@@ -218,7 +211,7 @@ h2 {
     line-height: 2.5rem;
     letter-spacing: 0.1rem;
     padding: var(--xl);
-    /* height: 900px; */
+
 }
 
 .img-gin {
@@ -263,16 +256,12 @@ h2 {
 .about-the-author {
     background-color: rgba(130, 117, 139, 0.176);
     border-radius: var(--xxs);
-
-    /* padding: var(--m); */
-    /* border: var(--border-s); */
 }
 
 .about-author-header {
     display: flex;
     justify-content: space-between;
     padding: var(--m);
-    /*  border-bottom: var(--border-m); */
     font-size: var(--m);
     background-color: rgba(239, 237, 237, 0.699);
 }
@@ -343,5 +332,5 @@ h2 {
 .next:hover {
     background-color: rgb(209, 209, 209);
     border: 2px solid rgba(105, 57, 141, 0.719);
-    ;
+
 }
